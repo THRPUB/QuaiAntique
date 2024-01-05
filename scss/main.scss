@@ -105,3 +105,16 @@ p{
         padding:10px;
     }
 }
+
+@media (min-width: 768px) {
+    .py-md-9 {
+        padding-bottom: 6rem !important;
+        padding-top: 6rem !important;
+    }
+        
+      
+}
+    
+.border-bottom {
+    border-bottom: 1px solid #e9ecef !important;
+  }
