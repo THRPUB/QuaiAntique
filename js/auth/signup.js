@@ -98,17 +98,17 @@ function validateConfirmationPassword(inputPwd, inputConfirmPwd){
 function InscrireUtilisateur(){
     let dataform = new FormData(formInscription);
 
-    var myHeaders = new Headers();
+    let myHeaders = new Headers();
 myHeaders.append("Content-Type", "application/json");
 
-var raw = JSON.stringify({
+let raw = JSON.stringify({
   "firstName": dataform.get("Nom"),
   "lastName": dataform.get("Prenom"),
   "email": dataform.get("Email"),
   "password": dataform.get("Password")
 });
 
-var requestOptions = {
+let requestOptions = {
   method: 'POST',
   headers: myHeaders,
   body: raw,
